@@ -2,39 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Hiringbuddy Design System - Professional recruitment agency styling */
 
 @layer base {
   :root {
+    /* Background and base colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 216 50% 16%;
 
+    /* Card components */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 216 50% 16%;
 
+    /* Popover components */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 216 50% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Navy Blue */
+    --primary: 216 50% 16%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 216 30% 35%;
+    --primary-dark: 216 60% 12%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Soft Orange accent */
+    --secondary: 25 95% 70%;
+    --secondary-foreground: 216 50% 16%;
+    --secondary-light: 25 100% 85%;
+    --secondary-dark: 25 85% 55%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted colors for subtle elements */
+    --muted: 216 12% 96%;
+    --muted-foreground: 216 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors */
+    --accent: 216 12% 96%;
+    --accent-foreground: 216 50% 16%;
 
+    /* Status colors */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border and input colors */
+    --border: 216 20% 90%;
+    --input: 216 20% 90%;
+    --ring: 216 50% 16%;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(216 50% 16%), hsl(216 30% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(25 95% 70%), hsl(25 100% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(216 50% 16%) 0%, hsl(216 30% 35%) 100%);
+
+    /* Shadows */
+    --shadow-subtle: 0 2px 8px -2px hsl(216 50% 16% / 0.1);
+    --shadow-medium: 0 8px 24px -4px hsl(216 50% 16% / 0.15);
+    --shadow-large: 0 20px 40px -8px hsl(216 50% 16% / 0.2);
 
     --radius: 0.5rem;
 
